@@ -8,7 +8,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"})
+@CucumberOptions(plugin = {"pretty"},
+features = {"classpath:features/"})
 public class TestRunner {
 	
 	@AfterClass
